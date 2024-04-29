@@ -6,7 +6,7 @@ const axios = require("axios")
 const BASE_URL = 'https://api.binance.com';
 const PAIR = 'TNSRUSDT';
 const AMOUNT_USDT = "45";
-const LISTING_TIME = 1714413660000 - 350; // CHECK MEE
+const LISTING_TIME = 1714420500000; // CHECK MEE
 
 
 const queryString = (obj) => {
@@ -112,6 +112,7 @@ const main = async () => {
 let interval = setInterval( async () => {
     const finalTrade = await main()
     if(finalTrade){
-        clearInterval(interval)
+        clearInterval(interval);
+        process.exit(0);
     }
 }, 5);
