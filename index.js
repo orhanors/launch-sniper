@@ -6,7 +6,7 @@ const axios = require("axios")
 const BASE_URL = 'https://api.binance.com';
 const PAIR = 'TNSRUSDT';
 const AMOUNT_USDT = "20";
-const LISTING_TIME = 1714469700000; // CHECK MEE
+const LISTING_TIME = 1714469880000 - 330; // CHECK MEE
 
 
 const queryString = (obj) => {
