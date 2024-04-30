@@ -4,9 +4,9 @@ require('dotenv').config();
 const axios = require("axios")
 
 const BASE_URL = 'https://api.binance.com';
-const PAIR = 'TNSRUSDT';
+const PAIR = 'REZUSDT';
 const AMOUNT_USDT = "20";
-const LISTING_TIME = 1714470600000; // CHECK MEE
+const LISTING_TIME = 1714478400000 - 350; // CHECK MEE
 
 
 const queryString = (obj) => {
